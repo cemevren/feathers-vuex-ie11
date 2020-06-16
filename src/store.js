@@ -1,17 +1,15 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import feathersVuex from 'feathers-vuex'
+//import feathersVuex from 'feathers-vuex'
 import feathersClient from './feathers-client'
 
-const { service, auth, FeathersVuex } = feathersVuex(feathersClient, { idField: '_id' })
+//const { service, auth, FeathersVuex } = feathersVuex(feathersClient, { idField: '_id' })
 
 Vue.use(Vuex)
-Vue.use(FeathersVuex)
+//Vue.use(FeathersVuex)
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  plugins: [
-    service('todos')
-  ]
+
 })

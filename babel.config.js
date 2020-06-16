@@ -1,11 +1,7 @@
 module.exports = {
   presets: [
-    ['@vue/app',{
-      "targets": {
-        "ie": 11
-      },
-      "useBuiltIns": "usage",
-      "debug": true
-    }]
-  ]
+    ['@vue/app'    
+    ]
+  ],
+  plugins: ["@babel/plugin-transform-modules-commonjs","babel-plugin-add-module-exports", "dynamic-import-node"]
 }
